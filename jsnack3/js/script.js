@@ -7,3 +7,19 @@
 // La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra “posizioneMin” e “posizioneMax”
 // Nel nostro caso, se la chiamassimo così tagliaArray(arrayNumeri, 2, 4) ci restituirebbe un array così composto:
 // [2, 3, 4]
+
+
+const arrayNumeri = [0, 1, 2, 3, 4, 5, 6];
+
+
+// funzione che taglia l'array in base al min e max scelti
+function cutArray(array, min, max) {
+
+    const resultArray = [];
+    for (i = min; i <= max; i++) {
+        resultArray.push(array[i]);
+    }
+    return resultArray;
+}
+
+console.log(cutArray(arrayNumeri, 2, 4));
