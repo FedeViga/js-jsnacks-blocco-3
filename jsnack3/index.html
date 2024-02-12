@@ -39,9 +39,27 @@
         Snack 3
     </h1>
 
-    <h2>
+    <h2 class="mb-5">
         Tagliare Array
     </h2>
+
+    <form>
+        <div class=" col-3 mb-3">
+          <label for="array-lenght" class="form-label">lunghezza desiderata per l'array</label>
+          <input type="number" class="form-control mb-2" id="array-lenght">
+          <div class="row">
+            <div class="col-6">
+                <label for="array-min" class="form-label">pos min</label>
+                <input type="number" class="form-control" id="array-min">
+            </div>
+            <div class="col-6">
+                <label for="array-max" class="form-label">pos max</label>
+                <input type="number" class="form-control" id="array-max">
+            </div>
+          </div>
+        </div>
+    </form>
+    <button id="button" type="submit" class="btn btn-dark mb-3">Taglia</button>
 
     <h2 id="result">
         
