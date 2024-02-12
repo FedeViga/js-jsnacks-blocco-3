@@ -5,13 +5,17 @@
 
 const array1 = ["a", "b", "c"];
 const array2 = [1, 2, 3];
-let result = [];
 
 
-// ciclo for che unisce i due array
-for (i = 0; i < array1.length; i++) {
-    result.push(array1[i]);
-    result.push(array2[i]);
+// funzione che unisce e mixa i due array
+function mixArray(array1, array2) {
+    
+    let result = [];
+    for (i = 0; i < array1.length; i++) {
+        result.push(array1[i]);
+        result.push(array2[i]);
+    }
+    return result;
 }
 
-console.log(result);
+console.log(mixArray(array1, array2))
