@@ -4,14 +4,17 @@
 
 // inizializzo elementi HTML e variabili
 const inputElement = document.querySelector("#input");
-const submitButtonElement = document.querySelector("#submit");
+const submitButtonElement = document.querySelector("#button");
 const resultElement = document.querySelector("#result");
-let userWord = "ciao";
 
 
-
-let result = mirror(userWord);
-console.log(result);
+// al click del bottone invoco la funzione mirror
+submitButtonElement.addEventListener('click',
+    function () {
+        const userWord = inputElement.value;
+        resultElement.innerHTML = mirror(userWord);
+    }
+)
 
 
 // funzione che specchia la parola
