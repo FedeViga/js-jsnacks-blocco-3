@@ -33,37 +33,46 @@
     </div>
 </nav>
 
-  <div class="container">
+  <div class="container text-center">
 
-    <h1>
-        Snack 3
-    </h1>
+    <div class="col-auto mx-auto border border-dark rounded-5 shadow-lg p-3">
 
-    <h2 class="mb-5">
-        Tagliare Array
-    </h2>
-
-    <form>
-        <div class=" col-3 mb-3">
-          <label for="array-lenght" class="form-label">lunghezza desiderata per l'array</label>
-          <input type="number" class="form-control mb-2" id="array-lenght">
-          <div class="row">
-            <div class="col-6">
-                <label for="array-min" class="form-label">pos min</label>
-                <input type="number" class="form-control" id="array-min">
+        <h1>
+            Snack 3
+        </h1>
+    
+        <h2 class="mb-5">
+            Tagliare Array
+        </h2>
+    
+        <form>
+            <div class="col col-md-8 col-lg-6 mb-3 mx-auto">
+                <div class="row">
+                    <div class="col-6 mx-auto">
+                        <label for="array-lenght" class="form-label">lunghezza desiderata per l'array</label>
+                        <input type="number" class="form-control text-center mb-2" id="array-lenght">
+                    </div>
+                </div>
+              <div class="row">
+                <div class="col-6">
+                    <label for="array-min" class="form-label">pos min</label>
+                    <input type="number" class="form-control text-center" id="array-min">
+                </div>
+                <div class="col-6">
+                    <label for="array-max" class="form-label">pos max</label>
+                    <input type="number" class="form-control text-center" id="array-max">
+                </div>
+              </div>
             </div>
-            <div class="col-6">
-                <label for="array-max" class="form-label">pos max</label>
-                <input type="number" class="form-control" id="array-max">
-            </div>
-          </div>
-        </div>
-    </form>
-    <button id="button" type="submit" class="btn btn-dark mb-3">Taglia</button>
+        </form>
+        <button id="button" type="submit" class="btn btn-dark mb-3">Taglia</button>
+    
+        <h2 id="result">
+            
+        </h2>
 
-    <h2 id="result">
-        
-    </h2>
+    </div>
+
 
   </div>
 

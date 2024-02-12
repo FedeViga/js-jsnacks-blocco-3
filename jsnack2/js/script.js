@@ -10,13 +10,13 @@ const buttonElement = document.querySelector("#button");
 const resultElement = document.querySelector("#result");
 
 
-arraysElement.innerHTML = array1 + "<br>" + array2;
+arraysElement.innerHTML = array1.join(" ") + "<br>" + array2.join(" ");
 
 // al click del bottone invoco la funzione mixArray
 buttonElement.addEventListener('click',
     function (){
         const result = mixArray(array1, array2);
-        resultElement.innerHTML = result;
+        resultElement.innerHTML = result.join(" ");
     }
 )
 

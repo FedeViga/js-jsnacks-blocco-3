@@ -33,27 +33,31 @@
     </div>
 </nav>
 
-  <div class="container">
+  <div class="container text-center">
 
-    <h1>
-        Snack 1
-    </h1>
+    <div class="col-auto mx-auto border border-dark rounded-5 shadow-lg p-3">
 
-    <h2 class="mb-5">
-        Insersci una parola per riceverla specchiata
-    </h2>
+        <h1>
+            Snack 1
+        </h1>
+    
+        <h2 class="mb-5">
+            Insersci una parola per riceverla specchiata
+        </h2>
+    
+        <form>
+            <div class="col col-sm-10 col-md-8 col-lg-6 mb-3 mx-auto">
+              <label for="input" class="form-label">Inserisci parola da specchiare</label>
+              <input type="text" class="form-control text-center" id="input">
+            </div>
+        </form>
+        <button id="button" type="submit" class="btn btn-dark mb-3">Submit</button>
+    
+        <h2 id="result">
+    
+        </h2>
 
-    <form>
-        <div class=" col-2 mb-3">
-          <label for="input" class="form-label">Inserisci parola da specchiare</label>
-          <input type="text" class="form-control" id="input">
-        </div>
-    </form>
-    <button id="button" type="submit" class="btn btn-dark mb-3">Submit</button>
-
-    <h2 id="result">
-
-    </h2>
+    </div>
 
   </div>
 
